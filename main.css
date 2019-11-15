@@ -1,0 +1,20 @@
+/*
+Green Mountain: #3d7c47
+
+Blue Mountain: #09868b
+
+Light Blue Backdrop: #76c1d4
+
+Barely Gray Edge: #f7f7f7
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.main-nav {
+  display: flex;
+}
