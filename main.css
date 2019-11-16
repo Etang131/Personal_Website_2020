@@ -10,11 +10,48 @@ Barely Gray Edge: #f7f7f7
 
 * {
   margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
   font-size: 16px;
 }
 
-.main-nav {
-  display: flex;
+/*NAV BAR */
+nav {
+  width: 100%;
+  background: #76c1d4;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #f7f7f7;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #09868b;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/*Cover */
+
+h1 {
+  margin-top: 210px;
+  color: black;
 }
