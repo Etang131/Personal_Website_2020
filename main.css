@@ -39,6 +39,19 @@ nav a:hover {
   background-color: #09868b;
 }
 
+/*Cover */
+
+h1 {
+  color: black;
+}
+
+.cover {
+  background: #f7f7f7;
+}
+
+/*Media Queires*/
+/*Nav Bar*/
+
 @media screen and (min-width: 768px) {
   nav ul {
     display: flex;
@@ -48,20 +61,31 @@ nav a:hover {
   }
 
   /*Currently having a margin issue add in next build 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    */
+}
+
+/*Cover Section */
+@media screen and (min-height: 220px) {
+  .cover {
+    margin: 10px 2% 10px 2%;
   }
-  */
+
+  .cover > p {
+    font-size: 1.3 rem;
+  }
 }
 
-/*Cover */
+@media screen and (min-width: 768px) {
+  .cover {
+    margin: 20px 3% 20px 3%;
+  }
 
-h1 {
-  color: black;
-}
-
-.cover {
-  background: #f7f7f7;
+  .cover > p {
+    font-size: 1.055 rem;
+  }
 }
