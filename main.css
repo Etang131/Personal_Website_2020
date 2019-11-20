@@ -8,12 +8,20 @@ Light Blue Backdrop: #76c1d4
 Barely Gray Edge: #f7f7f7
 */
 
+/*General Styles */
+
 * {
   margin: 0px;
 }
 
 html {
   font-size: 16px;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+.divider {
+  border: black solid 1px;
+  margin-bottom: 10px;
 }
 
 /*NAV BAR */
@@ -68,13 +76,8 @@ h1 {
   display: grid;
 }
 
-h2 {
-  color: black;
-  font-size: 2.2rem;
-}
-
 .skill-block {
-  height: 100px;
+  height: auto;
   border: 5px solid #76c1d4;
   margin-top: 10px;
 }
@@ -88,6 +91,15 @@ h2 {
   text-align: center;
 }
 
+/* Projects */
+.projects {
+  text-align: center;
+}
+
+.projects-container {
+  display: grid;
+}
+
 /*Media Queires*/
 /*Nav Bar*/
 
@@ -99,7 +111,7 @@ h2 {
     padding: 10px 0;
   }
 
-  /*Currently having a margin issue add in next build 
+  /*Currently having a margin issue add in next build
     .sticky {
       position: fixed;
       top: 0;
@@ -165,7 +177,7 @@ h2 {
 }
 
 /* Skills Section */
-@media screen and (min-height: 220px) {
+@media screen and (min-width: 220px) {
   .skills h2 {
     margin-top: 10px;
     text-align: center;
@@ -205,4 +217,46 @@ h2 {
   .skill-container li {
     font-size: 1.075rem;
   }
+}
+
+/* Projects Section */
+@media screen and (min-width: 220px) {
+  .projects h2 {
+    margin-top: 20px;
+  }
+
+  .projects-container {
+    grid-template-columns: 100%;
+  }
+
+  .projects-container h3 {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+  }
+}
+
+/*Resume Section */
+.resume .resume-button {
+  background-color: #76c1d4;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.resume a {
+  text-decoration: none;
+  color: black;
+  font-family: monospace Arial, Helvetica, sans-serif;
 }
