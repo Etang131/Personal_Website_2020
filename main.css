@@ -36,11 +36,10 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
+  text-decoration: underline;
   text-align: center;
   color: #f7f7f7;
   display: block;
-  padding: 10px;
 }
 
 nav a:hover {
@@ -100,8 +99,48 @@ h1 {
   display: grid;
 }
 
+/* Resume Section*/
+.resume .resume-button {
+  background-color: #76c1d4;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.resume a {
+  text-decoration: none;
+  color: black;
+  font-family: monospace Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 1rem;
+}
+
+/* Footer Section */
+footer {
+  background-color: #09868b;
+  margin-top: 25px;
+  padding: 10px 0 20px 0;
+}
+
+footer h2 {
+  margin-bottom: 5px;
+}
+
+footer a {
+  color: black;
+}
+
+footer i {
+  margin: 5px 15px;
+}
+
 /*Media Queires*/
 /*Nav Bar*/
+@media screen and (min-width: 220px) {
+  nav a {
+    padding: 3px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   nav ul {
@@ -111,13 +150,18 @@ h1 {
     padding: 10px 0;
   }
 
-  /*Currently having a margin issue add in next build
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
-    */
+  nav a {
+    padding: 10px;
+  }
+
+  /*Currently having a margin issue add in next build 
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+  */
 }
 
 /*Cover Section */
@@ -227,6 +271,7 @@ h1 {
 
   .projects-container {
     grid-template-columns: 100%;
+    grid-auto-rows: minmax(20px, auto);
   }
 
   .projects-container h3 {
@@ -237,26 +282,17 @@ h1 {
 @media screen and (min-width: 768px) {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
     grid-auto-rows: minmax(200px, auto);
+    grid-row-gap: 10px;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .projects-container {
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
     grid-auto-rows: minmax(200px, auto);
+    grid-row-gap: 10px;
   }
-}
-
-/*Resume Section */
-.resume .resume-button {
-  background-color: #76c1d4;
-  padding: 10px;
-  margin-top: 5px;
-}
-
-.resume a {
-  text-decoration: none;
-  color: black;
-  font-family: monospace Arial, Helvetica, sans-serif;
 }
