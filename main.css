@@ -99,6 +99,10 @@ h1 {
   text-align: center;
 }
 
+.projects p {
+  margin: 20px 2% 15px 2%;
+}
+
 .projects-container {
   display: grid;
 }
