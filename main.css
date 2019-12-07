@@ -310,6 +310,12 @@ footer i {
   .projects-container h3 {
     margin: 10px 0;
   }
+
+  .project-img {
+    width: 60%;
+    height: auto;
+    max-height: 325px;
+  }
 }
 
 @media screen and (min-width: 768px) {
