@@ -182,14 +182,19 @@ footer i {
     padding: 10px;
   }
 
-  /*Currently having a margin issue add in next build 
+  /*Currently having a margin issue add in next build */
   .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    
   }
-  */
+
+  /*Fixes the issues  link to solution: https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors */
+  a[name] {
+    display: block;
+    padding-top: 100px;
+    margin-top: -100px;
+  }
 }
 
 /*Cover Section */
@@ -216,7 +221,7 @@ footer i {
 
 @media screen and (min-width: 768px) {
   .cover {
-    margin: 20px 3% 20px 3%;
+    margin: 100px 3% 20px 3%;
   }
 
   .flex-cover {
@@ -251,7 +256,7 @@ footer i {
 /* Skills Section */
 @media screen and (min-width: 220px) {
   .skills h2 {
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: center;
   }
 
@@ -337,4 +342,19 @@ footer i {
     grid-auto-rows: minmax(200px, auto);
     grid-row-gap: 10px;
   }
+}
+
+/* Resume Section*/
+@media screen and (min-width: 220px) {
+  .resume ul li {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1025px) {
 }
