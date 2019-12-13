@@ -342,9 +342,9 @@ footer i {
   }
 
   .project-img {
-    width: 55%;
+    width: 50%;
     height: auto;
-    max-height: 325px;
+    max-height: 350px;
   }
 }
 
