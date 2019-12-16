@@ -346,6 +346,13 @@ footer i {
     height: auto;
     max-height: 350px;
   }
+
+  .project-img-ajusted {
+    width: auto;
+    height: auto;
+    max-width: 375px;
+    max-height: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
