@@ -86,7 +86,7 @@ h1 {
 
 .skill-container li {
   list-style-type: none;
-  text-align: center;
+  margin-left: -10%;
 }
 
 /* Projects */
@@ -135,6 +135,10 @@ h1 {
 }
 
 /* Resume Section*/
+.resume {
+  padding-bottom: 50px;
+}
+
 .resume .resume-button {
   background-color: #76c1d4;
   border: 2px solid #76c1d4;
@@ -144,10 +148,11 @@ h1 {
   padding: 3px 10px;
   margin-top: 20px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.resume a {
+.resume button a {
   text-decoration: none;
   color: white;
 }
@@ -188,7 +193,7 @@ footer i {
 /*Nav Bar*/
 @media screen and (min-width: 220px) {
   nav a {
-    padding: 3px;
+    padding: 10px;
   }
 }
 
@@ -346,13 +351,6 @@ footer i {
     height: auto;
     max-height: 350px;
   }
-
-  .project-img-ajusted {
-    width: auto;
-    height: auto;
-    max-width: 375px;
-    max-height: 450px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -380,6 +378,11 @@ footer i {
     display: flex;
     justify-content: center;
     margin-top: 13px;
+  }
+
+  .resume h2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
   }
 }
 
