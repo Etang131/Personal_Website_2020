@@ -166,8 +166,15 @@ h1 {
   color: black;
 }
 
-.resume ul li {
+.resume ul li a {
   list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+.resume ul li a:hover {
+  color: #09868b;
+  text-decoration: underline;
 }
 
 /* Footer Section */
